@@ -4,6 +4,8 @@
 
 - L_reg to me, it seems that encoding of neighbouring nodes should be too similar that the difference would be almost zero.
 - A_hat = A + I, we are adding the identity because A does not have 1 in the current node position i,i and though it will not be able to propagate the current node featrues to the neighbouring ones, so by adding the identity matrix we allow it to do so.
+- UT.x is the fourier transform (?!!)
+- and why g_theta \* x = U.g_theta.UT.x ??
 
 ## some termonolgy
 
