@@ -4,8 +4,12 @@
 
 - L_reg to me, it seems that encoding of neighbouring nodes should be too similar that the difference would be almost zero.
 - A_hat = A + I, we are adding the identity because A does not have 1 in the current node position i,i and though it will not be able to propagate the current node featrues to the neighbouring ones, so by adding the identity matrix we allow it to do so.
-- UT.x is the fourier transform (?!!)
-- and why g_theta \* x = U.g_theta.UT.x ??
+- UT.x is the fourier transform because U is the eigen-vectors matrix and by this dot product you say how each eigen-vector contribute so it can compose x.
+- and why g_theta \* x = U.g_theta.UT.x === what i understand is that as if we are doing L _ X then we decompose L so it is UAU.T _ X and then we apply a function parameterized by theta over the eigenvalue vector.
+
+- The paper builds the model to accept both F and A instead of using A at the last of step of regression.
+
+- y = A.x -- where x is the feature vector. this simply sums all the features of the neighbours
 
 ## some termonolgy
 
